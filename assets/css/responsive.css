@@ -997,6 +997,30 @@
         line-height: normal;
         font-size: 10px
     }
+
+    .philosophy-card {
+        flex-direction: column
+    }
+
+    .philosophy-card .content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .philosophy-card .content {
+        width: 100%
+    }
+
+    .center-heading h5 {
+        font-size: 20px
+    }
+
+    .philosophy-section {
+        border-radius: 40px
+    }
 }
 
 @media screen and (min-width: 450px) {
@@ -1095,5 +1119,23 @@
 
     .bd-section .bd-comment-box .bd-comment-icon {
         display: none
+    }
+
+    .philosophy-card {
+        height: 338px;
+        width: 338px;
+        gap: 10px
+    }
+
+    .philosophy-card .content h4 {
+        max-width: 165px
+    }
+
+    .philosophy-card {
+        padding: 20px 40px
+    }
+
+    .philosophy-section {
+        padding-bottom: 40px
     }
 }
