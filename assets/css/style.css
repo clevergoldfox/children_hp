@@ -1,0 +1,2740 @@
+@import"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";@import"https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap";@import"https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap";@import"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/RoundedMplus1c-200.ttf");
+    font-weight: 200
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/RoundedMplus1c-300.ttf");
+    font-weight: 300
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/RoundedMplus1c-400.ttf");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/RoundedMplus1c-500.ttf");
+    font-weight: 500
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/RoundedMplus1c-600.ttf");
+    font-weight: 600
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/RoundedMplus1c-700.ttf");
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Rounded Mplus 1c";
+    src: url("../fonts/RoundedMplus1c-800.ttf");
+    font-weight: 800
+}
+
+@font-face {
+    font-family: "Noto Sans JP";
+    src: url("../fonts/Noto-Sans-JP.ttf")
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,b,small,strong,body,button,input,optgroup,select,textarea {
+    font-family: "Rounded Mplus 1c"
+}
+
+body {
+    overflow-x: hidden !important;
+    background: #fefaf0;
+    scroll-behavior: smooth
+}
+
+a,i,.form-control,select,option,input,div,.btn {
+    text-decoration: none;
+    transition: all .3s ease-in-out
+}
+
+textarea,input,.navbar-toggler,button {
+    outline: 2px solid rgba(0,0,0,0) !important;
+    box-shadow: none !important
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px
+}
+
+::-webkit-scrollbar-track {
+    background: #fef9d2
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4f9858
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px)
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+.layout {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto;
+    background: #fefaf0
+}
+
+.lg-container {
+    width: 100%;
+    max-width: 1410px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto
+}
+
+.md-container {
+    width: 100%;
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto
+}
+
+.btn-primary {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 15px 30px !important;
+    gap: 10px !important;
+    height: 54px !important;
+    background: #177420 !important;
+    border-radius: 100px !important;
+    font-family: "Rounded Mplus 1c" !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #fff !important;
+    border: none !important;
+    transition: background .3s ease,transform .3s ease,box-shadow .3s ease !important
+}
+
+.btn-primary:hover {
+    background: #ff7b32 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(255,123,50,.4) !important
+}
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07)
+}
+
+.header .header-inner {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.header .header-inner .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.header .header-inner .nav-brand .logo {
+    height: 48px
+}
+
+.header .header-inner .nav-brand span {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9c4500
+}
+
+.header .header-inner .nav-bar {
+    display: flex;
+    align-items: center
+}
+
+.header .header-inner .nav-bar a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 10px;
+    border-right: 2px dashed #8e8678;
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #534133
+}
+
+.header .header-inner .nav-bar a.active,.header .header-inner .nav-bar a:hover {
+    color: #4f9858
+}
+
+.mobile-header {
+    width: 100%;
+    height: 70px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07)
+}
+
+.mobile-header .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.mobile-header .nav-brand .logo {
+    height: 48px
+}
+
+.mobile-header .nav-brand span {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9c4500
+}
+
+.hero-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 120px
+}
+
+.hero-section .hero-bottom-left {
+    position: absolute;
+    left: 27px;
+    bottom: -100px;
+    width: 360px;
+    z-index: 1
+}
+
+.hero-section .hero-bottom-right {
+    position: absolute;
+    right: 36px;
+    bottom: 0px;
+    width: 264px;
+    z-index: 1
+}
+
+.hero-section .hero-bg {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.hero-section .hero-bg-sm {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: bottom;
+    object-position: bottom
+}
+
+.hero-section .hero-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 165px 0px
+}
+
+.hero-section .hero-content h2 {
+    font-family: "Rounded Mplus 1c Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+    color: #3b3b3b;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: #fff;
+    margin-bottom: 10px
+}
+
+.hero-section .hero-content h2 span {
+    font-family: "Rounded Mplus 1c Bold";
+    color: #ff7b32
+}
+
+.hero-section .hero-content p {
+    margin-top: 30px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #534133;
+    margin-bottom: 30px
+}
+
+.hero-section .hero-content .circles-row {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.hero-section .hero-content .circles-row .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 110px;
+    height: 110px;
+    border-radius: 100px
+}
+
+.hero-section .hero-content .circles-row .circle h4 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #fff
+}
+
+.hero-section .hero-content .circles-row .circle h4 span {
+    font-family: "Noto Sans JP";
+    font-size: 16px
+}
+
+.hero-section .hero-content .circles-row .circle h4 small {
+    font-family: "Noto Sans JP";
+    font-size: 12px
+}
+
+.center-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.center-heading .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1
+}
+
+.center-heading small {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #534133;
+    margin-bottom: 10px
+}
+
+.center-heading h6 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    margin-bottom: 0px
+}
+
+.center-heading h3 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    border-bottom: 11px solid #ffe742;
+    margin-bottom: 40px
+}
+
+.center-heading h3 span {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: .1em;
+    color: #ff7b32
+}
+
+.center-heading p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #534133;
+    margin-bottom: 40px
+}
+
+.strengths-section {
+    width: 100%;
+    background: #fef9d2;
+    border-radius: 200px;
+    padding: 0px 0px 100px
+}
+
+.strengths-section .center-heading .heading {
+    margin-top: -50px
+}
+
+.strengths-section .strengths-row {
+    width: 100%;
+    gap: 40px 60px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.strengths-section .strengths-row .strengths-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 10px;
+    width: calc(50% - 30px);
+    min-height: 316px;
+    background: #fff;
+    border: 4px solid #fef9d2;
+    border-radius: 40px;
+    position: relative
+}
+
+.strengths-section .strengths-row .strengths-card .top-right {
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    z-index: 1
+}
+
+.strengths-section .strengths-row .strengths-card .top-left {
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    z-index: 1
+}
+
+.strengths-section .strengths-row .strengths-card .arrow1 {
+    position: absolute;
+    top: 50%;
+    right: -90px;
+    z-index: 1
+}
+
+.strengths-section .strengths-row .strengths-card .arrow2 {
+    position: absolute;
+    bottom: -90px;
+    left: -130px;
+    z-index: 1
+}
+
+.strengths-section .strengths-row .strengths-card .arrow3 {
+    position: absolute;
+    top: 30%;
+    right: -90px;
+    z-index: 1
+}
+
+.strengths-section .strengths-row .strengths-card .heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%
+}
+
+.strengths-section .strengths-row .strengths-card .heading .number {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 150%;
+    color: #000
+}
+
+.strengths-section .strengths-row .strengths-card .heading .text {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: #3b3b3b
+}
+
+.strengths-section .strengths-row .strengths-card .discription {
+    width: 100%;
+    display: flex;
+    gap: 40px
+}
+
+.strengths-section .strengths-row .strengths-card .discription .text {
+    width: calc(100% - 240px)
+}
+
+.strengths-section .strengths-row .strengths-card .discription .text p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #534133
+}
+
+.strengths-section .strengths-row .strengths-card .discription .text img {
+    max-width: 170px
+}
+
+.strengths-section .strengths-row .strengths-card .discription .img {
+    width: 200px;
+    height: 120px;
+    border-radius: 40px;
+    overflow: hidden
+}
+
+.strengths-section .strengths-row .strengths-card .discription .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.strengths-section .strengths-row .strengths-card .discription .img2 {
+    width: 200px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-top: -100px
+}
+
+.strengths-section .strengths-row .strengths-card .discription .img2 img {
+    width: 100%;
+    height: 100%
+}
+
+.support-details-section {
+    width: 100%;
+    background: #fff;
+    padding: 0px 0px 100px;
+    border-radius: 200px;
+    position: relative
+}
+
+.support-details-section .support-v1 {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: 1
+}
+
+.support-details-section .support-v2 {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    z-index: 1
+}
+
+.support-details-section .support-v3 {
+    position: absolute;
+    bottom: -68px;
+    left: 0;
+    z-index: 1
+}
+
+.support-details-section .center-heading .heading {
+    margin-top: -40px
+}
+
+.support-details-section .support-details-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 40px
+}
+
+.support-details-section .support-details-row .support-card {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    width: 270px;
+    height: 270px;
+    background: #fef9d2;
+    border-radius: 1000px
+}
+
+.support-details-section .support-details-row .support-card p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #534133;
+    margin-bottom: 0px
+}
+
+.facility-section {
+    width: 100%;
+    padding: 135px 0px 155px
+}
+
+.facility-section .facility-row {
+    width: 100%;
+    display: flex;
+    gap: 60px
+}
+
+.facility-section .facility-row .facility-col {
+    width: calc(100% - 30px);
+    min-height: 300px
+}
+
+.facility-section .facility-row .facility-col .heading {
+    width: 100%
+}
+
+.facility-section .facility-row .facility-col .heading .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.facility-section .facility-row .facility-col .heading h3 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    border-bottom: 11px solid #ffe742;
+    margin-bottom: 28px
+}
+
+.facility-section .facility-row .facility-col .heading p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #534133;
+    margin-bottom: 40px
+}
+
+.facility-section .facility-row .facility-col .banner {
+    width: 100%;
+    height: auto
+}
+
+.facility-section .facility-row .facility-col .banner img {
+    width: 100%;
+    height: 100%
+}
+
+.staff-section {
+    width: 100%;
+    min-height: 600px;
+    background: #fef9d2;
+    border-radius: 200px;
+    padding: 0px 0px 100px;
+    position: relative;
+    z-index: 1
+}
+
+.staff-section .staff-v1 {
+    position: absolute;
+    top: -120px;
+    right: 0px;
+    z-index: 2
+}
+
+.staff-section .staff-v2 {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    z-index: 2
+}
+
+.staff-section .center-heading .heading {
+    margin-top: -35px
+}
+
+.staff-section .staff-row-outer {
+    overflow-x: auto !important
+}
+
+.staff-section .staff-row-outer::-webkit-scrollbar {
+    width: 0px;
+    height: 0px
+}
+
+.staff-section .staff-section-row {
+    width: 1200px
+}
+
+.staff-section .staff-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 5px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0px auto;
+    height: calc(100% - 40px);
+    margin-bottom: 40px;
+    background: #fff;
+    border-radius: 40px
+}
+
+.staff-section .staff-card .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    margin-bottom: 20px
+}
+
+.staff-section .staff-card h6 {
+    margin-bottom: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #534133
+}
+
+.staff-section .staff-card h4 {
+    margin-bottom: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #534133
+}
+
+.staff-section .staff-card p {
+    margin-bottom: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #534133
+}
+
+.p-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.banner-section {
+    width: 100%;
+    height: auto;
+    height: 800px;
+    margin-top: -220px;
+    margin-bottom: -220px
+}
+
+.banner-section img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.blog-section {
+    width: 100%;
+    min-height: 600px;
+    background: #fef9d2;
+    border-radius: 200px;
+    padding: 80px 0px 100px;
+    position: relative;
+    z-index: 1
+}
+
+.blog-section .blog-row-outer {
+    overflow-x: auto !important
+}
+
+.blog-section .blog-row-outer::-webkit-scrollbar {
+    width: 0px;
+    height: 0px
+}
+
+.blog-section .blog-row {
+    width: 1200px
+}
+
+.blog-card {
+    max-width: 500px;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1
+}
+
+.blog-card .blog-banner {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 40px 40px 0px 0px
+}
+
+.blog-card .blog-banner img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.blog-card .blog-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    width: 100%;
+    min-height: 160px;
+    margin-top: -35px;
+    background: #fff;
+    border-radius: 40px
+}
+
+.blog-card .blog-content h6 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #534133;
+    margin-bottom: 10px
+}
+
+.blog-card .blog-content h6 span.success {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    height: 24px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 1px solid #177420;
+    border-radius: 100px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #177420
+}
+
+.blog-card .blog-content h6 span.warning {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+    height: 24px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 1px solid #ff7b32;
+    border-radius: 100px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ff7b32
+}
+
+.blog-card .blog-content h4 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: #ff7b32
+}
+
+.blog-card .blog-content p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #534133;
+    margin-bottom: 0px
+}
+
+.usage-flow-section {
+    padding: 100px 0px;
+    position: relative
+}
+
+.usage-flow-section .flow-v1 {
+    position: absolute;
+    top: -92px;
+    left: 0px;
+    z-index: 1
+}
+
+.usage-flow-section .flow-v2 {
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    z-index: 1
+}
+
+.usage-flow-section .flow-row-outer {
+    padding-top: 20px;
+    overflow-x: auto !important
+}
+
+.usage-flow-section .flow-row-outer::-webkit-scrollbar {
+    width: 0px;
+    height: 0px
+}
+
+.usage-flow-section .flow-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px
+}
+
+.usage-flow-section .flow-row .flow-pills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10px;
+    gap: 10px;
+    isolation: isolate;
+    width: 167px;
+    height: 240px;
+    background: #fefeff;
+    border: 4px solid #feefd0;
+    border-radius: 100px;
+    position: relative
+}
+
+.usage-flow-section .flow-row .flow-pills .arrow-right {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.usage-flow-section .flow-row span {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff7b32;
+    border-radius: 100px;
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: .1em;
+    color: #fff
+}
+
+.usage-flow-section .flow-row p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #534133
+}
+
+.footer-section .contact-card {
+    background: linear-gradient(90deg, #FFFFFF 49.21%, rgba(255, 255, 255, 0) 74.83%),url(../images/contact-bg.png);
+    border-radius: 40px;
+    width: 100%;
+    min-height: 200px;
+    padding: 66px 70px;
+    margin-bottom: 85px;
+    background-position: right
+}
+
+.footer-section .contact-card h4 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    border-bottom: 11px solid #ffe742;
+    margin-bottom: 30px
+}
+
+.footer-section .contact-card p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #534133;
+    margin-bottom: 30px
+}
+
+.footer-section .contact-card .contact-number {
+    display: flex;
+    justify-content: space-between;
+    max-width: 615px;
+    width: 100%
+}
+
+.footer-section .contact-card .contact-number .number h5 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #534133;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px
+}
+
+.footer-section .contact-card .contact-number .number p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #534133;
+    margin-bottom: 0px
+}
+
+.footer-section .footer-content {
+    width: 100%;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ddd
+}
+
+.footer-section .footer-content .footer-disc .f-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px
+}
+
+.footer-section .footer-content .footer-disc .f-brand .logo {
+    height: 48px
+}
+
+.footer-section .footer-content .footer-disc .f-brand span {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #9c4500
+}
+
+.footer-section .footer-content .footer-disc p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: .1em;
+    color: #534133;
+    margin-bottom: 20px
+}
+
+.footer-section .footer-content .footer-disc .contect-row {
+    display: flex;
+    align-items: center;
+    gap: 40px
+}
+
+.footer-section .footer-content .f-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px
+}
+
+.footer-section .footer-content .f-nav a {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .05em;
+    color: #534133
+}
+
+.footer-section .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px
+}
+
+.footer-section .bottom .bottom-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.footer-section .bottom .bottom-nav span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: .1em;
+    color: #666
+}
+
+.footer-section .bottom .bottom-nav a {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: .1em;
+    color: #534133
+}
+
+.footer-section .bottom .back-to-top {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.footer-section .bottom .back-to-top span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: .1em;
+    color: #534133
+}
+
+.other-hero-section {
+    width: 100%;
+    display: flex;
+    position: relative
+}
+
+.other-hero-section .contact-hero-v1 {
+    position: absolute;
+    left: 0;
+    bottom: -110px;
+    z-index: 1
+}
+
+.other-hero-section .hero-content {
+    width: calc(100% - 790px);
+    padding: 30px 30px 30px 100px;
+    height: auto;
+    position: relative
+}
+
+.other-hero-section .hero-content .classroom-hero-v1 {
+    position: absolute;
+    right: -20px;
+    bottom: -40px;
+    z-index: 1
+}
+
+.other-hero-section .hero-content .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px
+}
+
+.other-hero-section .hero-content .breadcrumb span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #9c4500
+}
+
+.other-hero-section .hero-content h2 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+    color: #3b3b3b;
+    background: #fff;
+    min-height: 59px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 5px 10px
+}
+
+.other-hero-section .hero-content h2 span {
+    font-family: "Rounded Mplus 1c";
+    color: #ff7b32
+}
+
+.other-hero-section .hero-content p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 150%;
+    color: #000
+}
+
+.other-hero-section .hero-banner {
+    height: 425px;
+    width: 790px;
+    position: relative;
+    z-index: 2
+}
+
+.other-hero-section .hero-banner img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.contact-form-section {
+    padding: 80px 0px 120px
+}
+
+.contact-form-section .form-card {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto
+}
+
+.contact-form-section .form-card .form-group {
+    display: flex;
+    margin-bottom: 30px
+}
+
+.contact-form-section .form-card .form-group .title {
+    width: 160px;
+    display: flex;
+    padding: 18px 0px;
+    gap: 5px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000
+}
+
+.contact-form-section .form-card .form-group .title span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #ed792b
+}
+
+.contact-form-section .form-card .form-group .input {
+    width: calc(100% - 160px);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.contact-form-section .form-card .form-group .form-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    min-height: 64px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    color: #000;
+    outline: none
+}
+
+.contact-form-section .form-card .form-group .form-control::-moz-placeholder {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999
+}
+
+.contact-form-section .form-card .form-group .form-control::placeholder {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999
+}
+
+.contact-form-section .form-card .form-group .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px
+}
+
+.contact-form-section .form-card .form-group .checkbox-group label {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.contact-form-section .form-card .form-group .checkbox-group .check-box {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.contact-form-section .form-card .form-group .checkbox-group .check-box:checked {
+    background: #4f9858;
+    border-color: #4f9858
+}
+
+.contact-form-section .form-card .form-group .checkbox-group .check-box:checked::after {
+    content: "✓";
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1
+}
+
+.contact-form-section .form-card .form-group select.form-control {
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="%23333" d="M1 1l4 4 4-4"/></svg>') no-repeat;
+    background-position: right 15px center;
+    padding-right: 35px;
+    background-color: #fff
+}
+
+.contact-form-section .form-card .form-group .privacy-label {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.contact-form-section .form-card .form-group .privacy-label a {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #000
+}
+
+.btn-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+    width: 400px;
+    height: 54px;
+    background: #ff7b32;
+    border-radius: 100px;
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff
+}
+
+.btn-submit:hover {
+    background: #177420;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(23,116,32,.4)
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+    position: relative
+}
+
+.contact-info .contact-info-v1 {
+    position: absolute;
+    bottom: -100px;
+    right: 50px
+}
+
+.contact-info .map {
+    width: 50%;
+    height: auto;
+    background: #f5f5f5
+}
+
+.contact-info .map img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.contact-info .info {
+    padding: 0px 60px;
+    display: flex;
+    width: 50%;
+    height: auto
+}
+
+.contact-info .info h3 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-end;
+    width: -moz-fit-content;
+    width: fit-content;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    border-bottom: 11px solid #ffe742;
+    margin-bottom: 40px
+}
+
+.contact-info .info .info-row {
+    width: 100%;
+    padding: 20px 0px
+}
+
+.contact-info .info .info-row span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000
+}
+
+.classroom-concept-section {
+    padding: 60px 0px 80px
+}
+
+.classroom-concept-section .banner {
+    width: 100%
+}
+
+.classroom-concept-section .banner img {
+    width: 100%
+}
+
+.classroom-concept-section .content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.classroom-concept-section .content h3 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 11px solid #ffe742;
+    margin-bottom: 20px
+}
+
+.classroom-concept-section .content h5 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: #3b3b3b;
+    margin-bottom: 40px
+}
+
+.classroom-concept-section .content h6 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ff7b32;
+    margin-bottom: 20px
+}
+
+.classroom-concept-section .content p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000
+}
+
+.management-philosophy-section {
+    width: 100%;
+    min-height: 300px;
+    background: #fff2cf;
+    border-radius: 200px;
+    padding: 0px 0px 100px;
+    position: relative;
+    z-index: 1
+}
+
+.management-philosophy-section .center-heading .heading {
+    margin-top: -35px
+}
+
+.management-philosophy-section .management-philosophy-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center
+}
+
+.management-philosophy-section .management-philosophy-row .m-p-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 270px;
+    height: 270px;
+    background: #fff;
+    border-radius: 1000px
+}
+
+.management-philosophy-section .management-philosophy-row .m-p-card svg {
+    margin-bottom: 20px
+}
+
+.management-philosophy-section .management-philosophy-row .m-p-card h6 {
+    margin-bottom: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #ff7b32
+}
+
+.management-philosophy-section .management-philosophy-row .m-p-card p {
+    margin-bottom: 0px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #000
+}
+
+.classroom-strengths-section {
+    width: 100%;
+    min-height: 400px;
+    background: #fef9d2;
+    border-radius: 200px;
+    padding: 0px 0px 40px;
+    position: relative;
+    z-index: 2
+}
+
+.classroom-strengths-section .sc-v1 {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    z-index: 1
+}
+
+.classroom-strengths-section .sc-v2 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1
+}
+
+.classroom-strengths-section .center-heading .heading {
+    margin-top: -35px
+}
+
+.classroom-strengths-section .strengths-cards-row {
+    margin-bottom: 40px;
+    overflow-x: auto !important
+}
+
+.classroom-strengths-section .strengths-cards-row::-webkit-scrollbar {
+    width: 0px;
+    height: 0px
+}
+
+.classroom-strengths-section .strengths-cards-row .banner {
+    width: 100%
+}
+
+.classroom-strengths-section .strengths-cards-row .banner img {
+    width: 100%;
+    height: 100%;
+    max-width: 570px;
+    max-height: 475px
+}
+
+.classroom-strengths-section .strengths-cards-row .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 570px;
+    margin: 0px auto
+}
+
+.classroom-strengths-section .strengths-cards-row .content .heading {
+    margin-bottom: 20px
+}
+
+.classroom-strengths-section .strengths-cards-row .content h6 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ff7b32;
+    margin-bottom: 20px
+}
+
+.classroom-strengths-section .strengths-cards-row .content p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000
+}
+
+.classroom-strengths-section .strengths-cards-row .content p span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000
+}
+
+.classroom-strengths-section .strengths-cards-row .strengths-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    gap: 20px;
+    isolation: isolate;
+    max-width: 270px;
+    height: calc(100% - 20px);
+    margin-bottom: 20px;
+    background: #fff;
+    border: 4px solid #fef9d2;
+    border-radius: 40px
+}
+
+.classroom-strengths-section .strengths-cards-row .strengths-card h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 50px;
+    color: #000;
+    margin-bottom: 0px
+}
+
+.classroom-strengths-section .strengths-cards-row .strengths-card h5 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #3b3b3b;
+    max-width: 210px;
+    margin-bottom: 0px
+}
+
+.classroom-strengths-section .strengths-cards-row .strengths-card p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #534133;
+    margin-bottom: 0px
+}
+
+.service-introduction-section {
+    padding: 0px 0px 100px;
+    position: relative;
+    z-index: 2
+}
+
+.service-introduction-section .si-v1 {
+    position: absolute;
+    top: -110px;
+    left: 0px;
+    z-index: 1
+}
+
+.service-introduction-section .si-v2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1
+}
+
+.service-introduction-section .center-heading .heading {
+    margin-top: -30px
+}
+
+.service-introduction-section .service-introduction-card {
+    width: 100%;
+    padding: 40px;
+    max-width: 570px;
+    height: 450px;
+    position: relative;
+    z-index: 2;
+    margin: 0px auto;
+    background: #fff;
+    border-radius: 40px;
+    height: calc(100% - 40px);
+    margin-bottom: 40px
+}
+
+.service-introduction-section .service-introduction-card h6 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+    color: #ff7b32;
+    margin-bottom: 10px
+}
+
+.service-introduction-section .service-introduction-card .tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 10px;
+    height: 34px;
+    background: #ff7b32;
+    border-radius: 100px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 20px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff
+}
+
+.service-introduction-section .service-introduction-card .banner {
+    width: 100%;
+    height: 267px;
+    border-radius: 40px;
+    overflow: hidden
+}
+
+.service-introduction-section .service-introduction-card .banner img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.service-introduction-section .service-introduction-card .content p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #534133;
+    margin-bottom: 20px
+}
+
+.service-introduction-section .service-introduction-card .content .points {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000
+}
+
+.service-introduction-section .service-introduction-card .content .points span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    width: calc(100% - 30px)
+}
+
+.flow-of-the-day-section {
+    padding: 0px 0px 80px;
+    position: relative
+}
+
+.flow-of-the-day-section .fd-v1 {
+    position: absolute;
+    top: -40px;
+    right: 230px;
+    z-index: 1
+}
+
+.flow-of-the-day-section .flow-heading {
+    margin-bottom: 10px
+}
+
+.flow-of-the-day-section .center-heading .heading {
+    margin-top: -40px
+}
+
+.flow-of-the-day-section .flow-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.flow-of-the-day-section .flow-section .line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #ffe742;
+    margin-left: 98px
+}
+
+.flow-of-the-day-section .flow-section .flow-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.flow-of-the-day-section .flow-section .flow-card .time {
+    width: 110px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+    color: #3b3b3b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.flow-of-the-day-section .flow-section .flow-card .time .dot {
+    width: 20px;
+    height: 20px;
+    background: #ffe742;
+    border-radius: 100px
+}
+
+.flow-of-the-day-section .flow-section .flow-card .detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    width: calc(100% - 110px)
+}
+
+.flow-of-the-day-section .flow-section .flow-card .detail h6 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+    color: #3b3b3b;
+    margin-bottom: 0px
+}
+
+.flow-of-the-day-section .flow-section .flow-card .detail .banner {
+    width: 185px;
+    height: 185px;
+    border-radius: 40px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.main-blog-section {
+    padding: 60px 0px 140px;
+    position: relative
+}
+
+.main-blog-section .blog-main-v1 {
+    position: absolute;
+    bottom: -50px;
+    right: 0px
+}
+
+.main-blog-section .tab-pills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px
+}
+
+.main-blog-section .tab-pills .pill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 54px;
+    background: #fdf9dd;
+    border-radius: 100px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #177420
+}
+
+.main-blog-section .tab-pills .pill svg path {
+    stroke: #177420 !important
+}
+
+.main-blog-section .tab-pills .pill:hover,.main-blog-section .tab-pills .pill.active {
+    color: #fff;
+    background: #fc9557;
+    box-shadow: 0 8px 20px rgba(252,149,87,.45)
+}
+
+.main-blog-section .tab-pills .pill:hover svg path,.main-blog-section .tab-pills .pill.active svg path {
+    stroke: #fff !important
+}
+
+.pagination {
+    gap: 14px
+}
+
+.pagination .page-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: none !important;
+    border-radius: 100px !important;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #534133
+}
+
+.pagination .page-link.active,.pagination .page-link:hover {
+    background: #ff7b32;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(255,123,50,.4)
+}
+
+.pagination .page-link.active svg path,.pagination .page-link:hover svg path {
+    stroke: #fff
+}
+
+.articles-section {
+    width: 100%;
+    min-height: 400px;
+    background: #fef9d2;
+    border-radius: 200px;
+    padding: 0px 0px 40px;
+    position: relative;
+    margin-bottom: 100px
+}
+
+.articles-section .center-heading .heading {
+    margin-top: -35px
+}
+
+.articles-slider {
+    position: relative
+}
+
+.articles-slider .vw-100 {
+    width: 100vw
+}
+
+.articles-slider .slider-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    top: 35%;
+    z-index: 999;
+    position: absolute
+}
+
+.articles-slider .slider-nav .custom-prev,.articles-slider .slider-nav .custom-next {
+    padding: 5px;
+    gap: 10px;
+    isolation: isolate;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #fff;
+    border-radius: 100px;
+    transition: box-shadow .3s ease,transform .3s ease
+}
+
+.articles-slider .slider-nav .custom-prev:hover,.articles-slider .slider-nav .custom-next:hover {
+    box-shadow: 0 8px 20px rgba(23,116,32,.3);
+    transform: translateY(-2px)
+}
+
+.atmosphere-section {
+    width: 100%;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 200px;
+    padding: 80px 0px;
+    margin-top: 60px
+}
+
+.atmosphere-section .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.atmosphere-section .content h3 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    border-bottom: 11px solid #ffe742;
+    margin-bottom: 20px;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.atmosphere-section .content h4 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: #3b3b3b;
+    margin-bottom: 40px
+}
+
+.atmosphere-section .content p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000
+}
+
+.atmosphere-section .atmosphere-card {
+    width: 100%;
+    height: 200px;
+    border-radius: 40px;
+    max-width: 240px;
+    margin: 0px auto;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.atmosphere-section .atmosphere-card .pill {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 44px;
+    background: #fff;
+    border-radius: 100px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000
+}
+
+.atmosphere-section .atmosphere-card:hover .pill {
+    background: #4f9858;
+    color: #fff
+}
+
+.atmosphere-section .atmosphere-card img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.equipment-introduction-section {
+    padding: 100px 0px
+}
+
+.equipment-introduction-section .equipment-row-outer {
+    overflow-x: auto !important
+}
+
+.equipment-introduction-section .equipment-row-outer .equipment-row {
+    min-width: 1100px
+}
+
+.equipment-introduction-section .equipment-row-outer::-webkit-scrollbar {
+    width: 0px;
+    height: 0px
+}
+
+.equipment-introduction-section .equipment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    gap: 10px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 270px;
+    height: calc(100% - 20px);
+    margin-bottom: 20px;
+    background: #fff;
+    border: 4px solid #fef9d2;
+    border-radius: 40px
+}
+
+.equipment-introduction-section .equipment-card:hover {
+    box-shadow: #fef9d2 0px 8px 24px
+}
+
+.equipment-introduction-section .equipment-card .img {
+    height: 200px;
+    width: 210px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.equipment-introduction-section .equipment-card h4 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 0px
+}
+
+.equipment-introduction-section .equipment-card p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #534133;
+    margin-bottom: 0px
+}
+
+.safety-initiatives {
+    padding: 0px 0px 100px;
+    position: relative
+}
+
+.safety-initiatives .safety-row-outer {
+    overflow-x: auto !important
+}
+
+.safety-initiatives .safety-row-outer::-webkit-scrollbar {
+    width: 0px;
+    height: 0px
+}
+
+.safety-initiatives .safety-v1 {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 0
+}
+
+.safety-initiatives .safety-v2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    z-index: 0
+}
+
+.safety-initiatives .safety-card {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    gap: 10px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 270px;
+    height: calc(100% - 20px);
+    margin-bottom: 20px;
+    background: #fff;
+    border: 4px solid #fef9d2;
+    border-radius: 40px
+}
+
+.safety-initiatives .safety-card:hover {
+    box-shadow: #fef9d2 0px 8px 24px
+}
+
+.safety-initiatives .safety-card .img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 5px
+}
+
+.safety-initiatives .safety-card h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 54px;
+    margin-bottom: 0px
+}
+
+.safety-initiatives .safety-card p {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #3b3b3b;
+    margin-bottom: 0px
+}
+
+.transportation-section {
+    padding: 0px 0px 80px;
+    position: relative
+}
+
+.transportation-section .transportation-v1 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0
+}
+
+.transportation-section .banner {
+    width: 100%
+}
+
+.transportation-section .banner img {
+    width: 100%
+}
+
+.transportation-section .content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.transportation-section .content h3 {
+    font-family: "Rounded Mplus 1c";
+    font-style: normal;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: .1em;
+    color: #3b3b3b;
+    border-bottom: 11px solid #ffe742;
+    margin-bottom: 20px
+}
+
+.transportation-section .content h5 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: #3b3b3b;
+    margin-bottom: 40px
+}
+
+.transportation-section .content h6 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #ff7b32;
+    margin-bottom: 20px
+}
+
+.transportation-section .content p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000
+}
+
+.transportation-section .content p span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000
+}
+
+.job-categories-section {
+    background: #fff;
+    border-radius: 200px;
+    padding: 0px 0px 100px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 2
+}
+
+.job-categories-section .center-heading .heading {
+    margin-top: -50px
+}
+
+.job-categories-section .job-categories-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.job-categories-section .job-categories-row .cat-pills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 64px;
+    background: #fff;
+    border-radius: 20px;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #534133
+}
+
+.bottom-sm {
+    padding: 40px 0px;
+    border-top: 1px solid #ddd
+}
+
+.bottom-sm .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px
+}
+
+.bottom-sm .nav a {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: .1em;
+    color: #534133;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.bottom-sm p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: .05em;
+    color: #666;
+    margin-bottom: 0px
+}
+
+.order-1 {
+    order: 1 !important
+}
+
+.order-2 {
+    order: 2 !important
+}
+
+.mobile-offcanvas {
+    width: 300px !important;
+    background: #fefaf0;
+    border-left: 3px solid #ffe742
+}
+
+.mobile-offcanvas .offcanvas-header {
+    padding: 16px 20px;
+    border-bottom: 2px dashed #ffe742;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.mobile-offcanvas .offcanvas-header .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.mobile-offcanvas .offcanvas-header .nav-brand .logo {
+    height: 44px
+}
+
+.mobile-offcanvas .offcanvas-header .nav-brand span {
+    font-family: "Rounded Mplus 1c";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #9c4500
+}
+
+.mobile-offcanvas .offcanvas-header .offcanvas-close-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0
+}
+
+.mobile-offcanvas .offcanvas-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.mobile-offcanvas .offcanvas-body .mobile-nav-links {
+    display: flex;
+    flex-direction: column
+}
+
+.mobile-offcanvas .offcanvas-body .mobile-nav-links a {
+    font-family: "Rounded Mplus 1c";
+    font-weight: 500;
+    font-size: 16px;
+    color: #534133;
+    padding: 16px 10px;
+    border-bottom: 2px dashed #ffe742;
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.mobile-offcanvas .offcanvas-body .mobile-nav-links a::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fcc202;
+    border-radius: 50%;
+    flex-shrink: 0
+}
+
+.mobile-offcanvas .offcanvas-body .mobile-nav-links a:hover,.mobile-offcanvas .offcanvas-body .mobile-nav-links a.active {
+    color: #4f9858;
+    padding-left: 16px
+}
+
+.mobile-offcanvas .offcanvas-body .mobile-nav-action .btn-primary {
+    height: 54px !important;
+    font-size: 15px !important;
+    justify-content: center !important
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1)
+    }
+
+    15% {
+        transform: scale(1.1)
+    }
+
+    30% {
+        transform: scale(1)
+    }
+
+    45% {
+        transform: scale(1.08)
+    }
+
+    60% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.reservation-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 6px;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 60px;
+    right: 20px;
+    z-index: 99;
+    background: #177420;
+    border-radius: 100px;
+    animation: heartbeat 2s ease-in-out infinite
+}
+
+.reservation-btn:hover {
+    animation-play-state: paused;
+    transform: scale(1.12);
+    box-shadow: 0 10px 28px rgba(23,116,32,.45)
+}
+
+.reservation-btn span {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff
+}
