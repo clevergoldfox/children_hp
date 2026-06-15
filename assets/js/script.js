@@ -17,13 +17,13 @@ $(document).ready(function () {
         margin: 20,
       },
       768: {
-        items: 2.5,
+        items: 2,
       },
       991: {
-        items: 3,
+        items: 3.5,
       },
       1200: {
-        items: 3.6,
+        items: 3,
       },
     },
   });
@@ -61,11 +61,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-
-// AOS
-AOS.init({
-  duration: 800,
-  easing: "ease-out-cubic",
-  offset: 80,
-  delay: 100,
-});

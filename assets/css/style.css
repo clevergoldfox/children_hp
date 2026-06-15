@@ -93,7 +93,6 @@ textarea,input,.navbar-toggler,button {
 }
 
 .layout {
-    max-width: 1400px;
     width: 100%;
     margin: 0px auto;
     background: #fefaf0
@@ -845,7 +844,22 @@ textarea,input,.navbar-toggler,button {
     width: 1200px
 }
 
+a:has(.blog-card) {
+    display: block;
+    color: inherit
+}
+
+a:has(.blog-card) .blog-card {
+    transition: transform .3s ease,box-shadow .3s ease
+}
+
+a:has(.blog-card):hover .blog-card {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,.1)
+}
+
 .blog-card {
+    border-radius: 40px;
     max-width: 500px;
     margin: 0px auto;
     width: 100%;
@@ -2679,6 +2693,316 @@ textarea,input,.navbar-toggler,button {
     justify-content: center !important
 }
 
+.bd-breadcrumb-section {
+    padding: 36px 0 0
+}
+
+.bd-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+.bd-breadcrumb a {
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    color: #9c4500
+}
+
+.bd-breadcrumb a:hover {
+    color: #4f9858
+}
+
+.bd-breadcrumb span {
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    color: #534133;
+    font-weight: 500
+}
+
+.bd-section {
+    padding: 40px 0 100px
+}
+
+.bd-section .bd-wrap {
+    max-width: 900px;
+    margin: 0 auto 80px
+}
+
+.bd-section .bd-hero-img {
+    width: 100%;
+    height: 440px;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden
+}
+
+.bd-section .bd-hero-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.bd-section .bd-card {
+    background: #fff;
+    border-radius: 0 0 40px 40px;
+    padding: 44px 56px 50px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.07)
+}
+
+.bd-section .bd-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px
+}
+
+.bd-section .bd-date {
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    color: #8e8678
+}
+
+.bd-section .bd-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-weight: 500
+}
+
+.bd-section .bd-tag.success {
+    border: 1.5px solid #177420;
+    color: #177420
+}
+
+.bd-section .bd-tag.warning {
+    border: 1.5px solid #ff7b32;
+    color: #ff7b32
+}
+
+.bd-section .bd-title {
+    font-family: "Rounded Mplus 1c";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.55;
+    color: #3b3b3b;
+    margin-bottom: 0
+}
+
+.bd-section .bd-divider {
+    width: 100%;
+    border-bottom: 2px dashed #ffe742;
+    margin: 26px 0
+}
+
+.bd-section .bd-body p {
+    font-family: "Noto Sans JP";
+    font-size: 15px;
+    line-height: 2;
+    color: #534133;
+    margin-bottom: 22px
+}
+
+.bd-section .bd-body p:last-child {
+    margin-bottom: 0
+}
+
+.bd-section .bd-img-row {
+    display: flex;
+    gap: 16px;
+    margin: 32px 0
+}
+
+.bd-section .bd-img-row .bd-img-item {
+    flex: 1;
+    height: 230px;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.bd-section .bd-img-row .bd-img-item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: transform .4s ease
+}
+
+.bd-section .bd-img-row .bd-img-item img:hover {
+    transform: scale(1.05)
+}
+
+.bd-section .bd-highlight {
+    background: #fffde8;
+    border: 2px dashed #fcc202;
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin: 32px 0
+}
+
+.bd-section .bd-highlight .bd-highlight-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Rounded Mplus 1c";
+    font-size: 16px;
+    font-weight: 700;
+    color: #177420;
+    margin-bottom: 18px
+}
+
+.bd-section .bd-highlight .bd-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0
+}
+
+.bd-section .bd-highlight .bd-list li {
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    line-height: 1.9;
+    color: #534133;
+    padding: 8px 0 8px 20px;
+    position: relative;
+    border-bottom: 1px dashed rgba(252,194,2,.4)
+}
+
+.bd-section .bd-highlight .bd-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: #4f9858;
+    border-radius: 50%
+}
+
+.bd-section .bd-highlight .bd-list li:last-child {
+    border-bottom: none
+}
+
+.bd-section .bd-highlight .bd-list li strong {
+    color: #177420;
+    margin-right: 8px
+}
+
+.bd-section .bd-comment-box {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: #f4fbf4;
+    border-left: 4px solid #4f9858;
+    border-radius: 0 20px 20px 0;
+    padding: 28px 32px;
+    margin: 32px 0
+}
+
+.bd-section .bd-comment-box .bd-comment-icon {
+    flex-shrink: 0;
+    margin-top: 4px
+}
+
+.bd-section .bd-comment-box .bd-comment-text .bd-comment-label {
+    display: inline-block;
+    font-family: "Rounded Mplus 1c";
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background: #4f9858;
+    border-radius: 100px;
+    padding: 3px 14px;
+    margin-bottom: 12px
+}
+
+.bd-section .bd-comment-box .bd-comment-text p {
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    line-height: 2;
+    color: #534133;
+    margin: 0
+}
+
+.bd-section .bd-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px
+}
+
+.bd-section .bd-tags .bd-tag-item {
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    color: #534133;
+    background: #fef9d2;
+    border: 1.5px dashed #fcc202;
+    border-radius: 100px;
+    padding: 5px 16px
+}
+
+.bd-section .bd-back {
+    display: flex;
+    justify-content: center
+}
+
+.bd-section .bd-back .bd-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Rounded Mplus 1c";
+    font-size: 15px;
+    font-weight: 500;
+    color: #177420;
+    border: 2px solid #177420;
+    border-radius: 100px;
+    padding: 13px 32px;
+    transition: background .3s ease,color .3s ease,box-shadow .3s ease
+}
+
+.bd-section .bd-back .bd-back-btn:hover {
+    background: #177420;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(23,116,32,.3)
+}
+
+.bd-section .bd-related .blog-card {
+    transition: transform .3s ease,box-shadow .3s ease;
+    cursor: pointer
+}
+
+.bd-section .bd-related .blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,.1)
+}
+
+@media(max-width: 768px) {
+    .bd-section .bd-hero-img {
+        height:230px;
+        border-radius: 24px 24px 0 0
+    }
+
+    .bd-section .bd-card {
+        padding: 24px 20px 32px
+    }
+
+    .bd-section .bd-title {
+        font-size: 20px
+    }
+
+    .bd-section .bd-img-row {
+        flex-direction: column
+    }
+
+    .bd-section .bd-img-row .bd-img-item {
+        height: 180px
+    }
+}
+
 @keyframes heartbeat {
     0% {
         transform: scale(1)
@@ -2715,7 +3039,7 @@ textarea,input,.navbar-toggler,button {
     position: fixed;
     width: 100px;
     height: 100px;
-    bottom: 60px;
+    bottom: 30px;
     right: 20px;
     z-index: 99;
     background: #177420;

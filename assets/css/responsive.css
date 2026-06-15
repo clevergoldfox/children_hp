@@ -1083,4 +1083,17 @@
     .other-hero-section .hero-content {
         padding: 0px 10px
     }
+
+    .bd-section .bd-comment-box {
+        padding: 25px;
+        gap: 15px
+    }
+
+    .bd-section .bd-highlight {
+        padding: 25px 20px
+    }
+
+    .bd-section .bd-comment-box .bd-comment-icon {
+        display: none
+    }
 }
